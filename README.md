@@ -14,13 +14,14 @@ Os benefícios podem ser:
 * Interoperabilidade.
 * Melhor experiência do usuário do usuário e baixa latência.
 
-* Aula 2
+Aula 2
 O que é REST?
 Ideia básica é integrar dois sistemas.
 * REST é a sigla para Representational State Transfer, que é um estilo arquitetural de software para a World Wide Web. É uma forma de criar sistemas distribuídos, como serviços web, que permitem que aplicativos sejam integrados com outros aplicativos através da Internet.
 * REST é baseado em conceitos simples e estabelecidos da web, como URLs para identificar recursos e HTTP para transmitir informações. O objetivo é tornar os sistemas distribuídos fáceis de serem implementados, escalados e mantidos.
 * REST é amplamente utilizado em API's para a web, onde os desenvolvedores podem criar recursos e funcionalidades que podem ser acessados por outras aplicações através da Internet. Isso permite a integração de aplicativos e serviços, criando soluções mais robustas e escaláveis.
 
+Aula 3
 E o que é uma API REST?
 * API REST (Application Programming Interface - RESTful) é um tipo de API que permite a integração de sistemas e aplicações através da web. É baseado no estilo arquitetural REST e utiliza o protocolo HTTP para trocar informações entre aplicativos.
 * Uma API REST define uma série de endpoints (pontos finais), cada um representando um recurso que pode ser acessado, criado, atualizado ou excluído através de requisições HTTP. Essas requisições incluem métodos como GET, POST, PUT, DELETE, entre outros.

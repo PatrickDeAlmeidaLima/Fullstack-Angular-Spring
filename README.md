@@ -27,3 +27,10 @@ E o que é uma API REST?
 * Uma API REST define uma série de endpoints (pontos finais), cada um representando um recurso que pode ser acessado, criado, atualizado ou excluído através de requisições HTTP. Essas requisições incluem métodos como GET, POST, PUT, DELETE, entre outros.
 * O uso de uma API REST permite que aplicações e sistemas diferentes possam se comunicar entre si de forma simples e clara. Isso facilita a integração de aplicativos, aumenta a escalabilidade e permite que novas funcionalidades sejam adicionadas sem afetar as aplicações existentes.
 * A API REST é amplamente utilizada em aplicações web, especialmente em aplicações de e-commerce, serviços de mídia social e em sistemas de gerenciamento de conteúdo.
+
+Aula 4 
+Como fazer teste de rotas de back-end?
+* É possível com o programa postman ou insonia passando a rota com o verbo referente a aplicação.
+* Pode ser testado através do seguinte link: https://designer.mocky.io/design
+* Programas para serem instalados para pleno funcionamento do back-end:
+* Postman, mysql, Spring Tool Suite 

@@ -34,3 +34,10 @@ Como fazer teste de rotas de back-end?
 * Pode ser testado através do seguinte link: https://designer.mocky.io/design
 * Programas para serem instalados para pleno funcionamento do back-end:
 * Postman, mysql, Spring Tool Suite 
+
+Aula 5
+O que é http e o que tem haver com rest?
+* HTTP significa Protocolo de Transferência de Hipertexto (em inglês, Hypertext Transfer Protocol) e é o protocolo mais utilizado para a transferência de dados na internet. Ele foi criado para permitir a comunicação entre servidores e clientes (como navegadores web) na web.
+* REST, por sua vez, é um estilo de arquitetura de software que utiliza o HTTP como um de seus principais protocolos de comunicação. Uma API RESTful (ou simplesmente API REST) é uma API que segue os princípios do estilo REST e utiliza o HTTP como meio de comunicação para a transferência de dados.
+* Na prática, uma API REST é composta por endpoints (URLs) que representam recursos, e cada endpoint corresponde a uma operação específica (como, por exemplo, criar, ler, atualizar ou excluir um recurso). As operações são realizadas por meio dos métodos HTTP (como GET, POST, PUT e DELETE), que indicam a ação que deve ser executada sobre o recurso correspondente ao endpoint.
+* Assim, o HTTP tem uma relação importante com o estilo de arquitetura REST, já que é o protocolo utilizado para a comunicação entre os clientes e os servidores que implementam uma API REST.

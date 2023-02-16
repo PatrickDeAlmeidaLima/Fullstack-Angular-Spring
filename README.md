@@ -53,3 +53,16 @@ O que é representação de um recurso?
 * Em REST, a representação de um recurso é a forma em que o recurso é apresentado em um determinado formato, que pode ser uma imagem, um documento HTML, JSON, XML, entre outros.
 * A representação é a forma como o recurso é "visto" e interage com outros sistemas, e pode ser manipulada através de requisições HTTP, como GET, POST, PUT, DELETE, PATCH, entre outras.
 * É importante destacar que a representação não é o próprio recurso, mas sim uma forma de apresentá-lo e interagir com ele através de uma determinada aplicação ou sistema. A representação é usada para transmitir o estado do recurso entre diferentes sistemas, sendo fundamental para a comunicação e troca de dados em arquiteturas RESTful.
+
+Aula 8
+O que é modelo de maturidade Richardson?
+* O Richardson Maturity Model é um modelo de maturidade para o design de APIs RESTful, criado por Leonard Richardson. O modelo descreve quatro níveis de maturidade, que vão desde o nível 0 (serviços web) até o nível 3 (serviços RESTful avançados):
+* Nível 0: Serviços Web
+* Neste nível, os serviços são implementados como operações de método remoto, baseados em protocolos como SOAP ou XML-RPC. Eles não seguem as restrições e princípios do REST, como a utilização de URIs para identificar recursos e a utilização dos verbos HTTP para realizar operações em recursos. Em geral, os serviços neste nível são considerados menos flexíveis, menos escaláveis e menos adaptáveis às mudanças do que os serviços RESTful.
+* Nível 1: Recursos
+No nível 1, os serviços são implementados como recursos, identificados por URIs. Os recursos podem ser objetos físicos ou abstratos, como documentos, imagens, pessoas, transações ou quaisquer outros objetos que possam ser representados digitalmente. Cada recurso é representado por um único URI, que é utilizado para identificar e acessar o recurso.
+* Nível 2: HTTP Verbs
+No nível 2, os serviços utilizam os verbos HTTP (GET, POST, PUT, DELETE) para realizar operações em recursos. Isso significa que, em vez de implementar operações específicas de método remoto, como "addUser", "deleteUser", "updateUser", etc., os serviços utilizam os verbos HTTP para realizar operações comuns em recursos, como obter um recurso, criar um novo recurso, atualizar um recurso existente ou excluir um recurso.
+* Nível 3: HATEOAS
+No nível 3, os serviços utilizam hipermídia para informar o cliente sobre as ações possíveis em cada recurso. Isso significa que, em vez de o cliente depender de documentação externa ou conhecimento prévio sobre o serviço para saber como interagir com os recursos, o serviço informa ao cliente, por meio de links hipermídia, quais são as ações possíveis em cada recurso. Isso torna os serviços mais flexíveis, adaptáveis e escaláveis, permitindo que novas funcionalidades sejam adicionadas sem afetar os clientes existentes.
+* Em resumo, o modelo Richardson Maturity Model descreve a evolução dos serviços web de uma abordagem baseada em operações de método remoto para uma abordagem baseada em recursos, identificados por URIs, e operações comuns, realizadas por meio dos verbos HTTP. Em seguida, ele evolui para uma abordagem baseada em hipermídia, que torna os serviços mais flexíveis, adaptáveis e escaláveis.

@@ -42,3 +42,14 @@ O que é http e o que tem haver com rest?
 * Na prática, uma API REST é composta por endpoints (URLs) que representam recursos, e cada endpoint corresponde a uma operação específica (como, por exemplo, criar, ler, atualizar ou excluir um recurso). As operações são realizadas por meio dos métodos HTTP (como GET, POST, PUT e DELETE), que indicam a ação que deve ser executada sobre o recurso correspondente ao endpoint.
 * Assim, o HTTP tem uma relação importante com o estilo de arquitetura REST, já que é o protocolo utilizado para a comunicação entre os clientes e os servidores que implementam uma API REST.
 * HTTP retorna após a requisição os códigos por exemplo: 200, 400, 404, etc.
+
+Aula 6
+O que é recurso? (URI/URL)
+* Em sistemas web e na arquitetura REST, um recurso é uma informação identificável e manipulável que é exposta através de uma URI (Uniform Resource Identifier) ou URL (Uniform Resource Locator). Os recursos são o cerne da arquitetura REST, e são acessados via HTTP utilizando verbos como GET, POST, PUT e DELETE para realizar operações de leitura, criação, atualização e exclusão, respectivamente.
+* Por exemplo, em um sistema de gerenciamento de produtos, os produtos em si podem ser considerados recursos, e cada produto pode ter uma URI única para ser acessada.
+
+Aula 7
+O que é representação de um recurso?
+* Em REST, a representação de um recurso é a forma em que o recurso é apresentado em um determinado formato, que pode ser uma imagem, um documento HTML, JSON, XML, entre outros.
+* A representação é a forma como o recurso é "visto" e interage com outros sistemas, e pode ser manipulada através de requisições HTTP, como GET, POST, PUT, DELETE, PATCH, entre outras.
+* É importante destacar que a representação não é o próprio recurso, mas sim uma forma de apresentá-lo e interagir com ele através de uma determinada aplicação ou sistema. A representação é usada para transmitir o estado do recurso entre diferentes sistemas, sendo fundamental para a comunicação e troca de dados em arquiteturas RESTful.

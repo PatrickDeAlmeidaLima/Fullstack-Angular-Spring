@@ -66,3 +66,18 @@ No nível 2, os serviços utilizam os verbos HTTP (GET, POST, PUT, DELETE) para 
 * Nível 3: HATEOAS
 No nível 3, os serviços utilizam hipermídia para informar o cliente sobre as ações possíveis em cada recurso. Isso significa que, em vez de o cliente depender de documentação externa ou conhecimento prévio sobre o serviço para saber como interagir com os recursos, o serviço informa ao cliente, por meio de links hipermídia, quais são as ações possíveis em cada recurso. Isso torna os serviços mais flexíveis, adaptáveis e escaláveis, permitindo que novas funcionalidades sejam adicionadas sem afetar os clientes existentes.
 * Em resumo, o modelo Richardson Maturity Model descreve a evolução dos serviços web de uma abordagem baseada em operações de método remoto para uma abordagem baseada em recursos, identificados por URIs, e operações comuns, realizadas por meio dos verbos HTTP. Em seguida, ele evolui para uma abordagem baseada em hipermídia, que torna os serviços mais flexíveis, adaptáveis e escaláveis.
+
+Aula 9
+O que é Hateoas?
+* HATEOAS significa "Hypermedia As The Engine Of Application State" (hipermídia como o motor do estado da aplicação, em português) e é um princípio de arquitetura de software para sistemas baseados em web.
+* Em resumo, HATEOAS é uma abordagem que permite que uma API expresse suas capacidades através de links hipermídia dinâmicos. Em outras palavras, em vez de uma API simplesmente retornar dados, a API também retorna links que permitem que o cliente saiba quais ações podem ser realizadas em seguida.
+* Por exemplo, ao consultar uma lista de usuários, a API poderia retornar não apenas a lista de usuários, mas também links para que o cliente possa criar um novo usuário, atualizar um usuário existente ou excluir um usuário. Esses links permitem que o cliente navegue pela API de forma autônoma, sem precisar de conhecimento prévio sobre as capacidades da API.
+* O uso de HATEOAS pode aumentar a flexibilidade e a capacidade de evolução de um sistema, tornando-o mais adaptável a mudanças sem a necessidade de alterações significativas no cliente ou na API.
+
+Aula 10
+O que é idempotência?
+* Idempotência é um conceito em ciência da computação que se refere à propriedade de uma operação que pode ser realizada várias vezes sem produzir efeitos colaterais diferentes do que seria produzido na primeira vez que a operação foi executada.
+* Em outras palavras, se uma operação é idempotente, executá-la uma vez ou várias vezes produzirá o mesmo resultado. Essa propriedade é importante em sistemas distribuídos e em redes, onde mensagens podem ser perdidas, duplicadas ou entregues fora de ordem. Se uma operação não for idempotente, a reexecução da mesma operação pode levar a resultados diferentes e indesejados.
+* Por exemplo, considerando um método HTTP PUT (atualização) que atualiza um registro em um banco de dados, a operação é idempotente se a atualização for feita corretamente apenas na primeira chamada, e se a operação for chamada novamente com os mesmos parâmetros, o resultado será o mesmo, sem qualquer alteração adicional no registro.
+* Outro exemplo é o método HTTP DELETE (exclusão), que deve ser idempotente, pois se um recurso já foi excluído, executar a operação novamente não deve alterar o estado do sistema.
+* A idempotência é uma propriedade desejável em sistemas distribuídos, em que as operações podem ser executadas mais de uma vez e precisam garantir que o resultado final seja o mesmo, independentemente do número de vezes que foram executadas. A utilização correta desse conceito pode ajudar a garantir a integridade e a consistência dos dados no sistema.

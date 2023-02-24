@@ -43,8 +43,12 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>compile</scope>
 		</dependency>
+		<!-- Migracoes - Flyaway -->
+		<dependency>
+	    <groupId>org.flywaydb</groupId>
+	    <artifactId>flyway-mysql</artifactId>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
